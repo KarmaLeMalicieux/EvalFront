@@ -1,0 +1,19 @@
+#titleApropos{
+
+  margin-bottom: 30px;
+}
+
+#AproposDiv{
+
+  margin-left: 30px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#AproposDiv > img {
+
+  width: 700px;
+}
+
