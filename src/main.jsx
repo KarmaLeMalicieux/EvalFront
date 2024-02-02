@@ -6,6 +6,7 @@ import Acceuil from "./pages/Acceuil";
 import Oeuvres from "./pages/Oeuvres";
 import ErrorPage from "./pages/ErrorPage";
 import A_Propos from "./pages/A_Propos";
+import { MyContextProvider } from "./context/MyContext";
 
 
 const router = createBrowserRouter([
@@ -32,6 +33,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <MyContextProvider>
+      <RouterProvider router={router} />
+    </MyContextProvider>
   </React.StrictMode>
 );
